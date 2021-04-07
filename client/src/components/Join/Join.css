@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(-55deg,#121213,#191a1b );
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    font-family: 'Montserrat', sans-serif;
+
+    
+  }
+  
+  .joinInnerContainer {
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .joinInput {
+    border-radius: 0;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 6px;
+    display: inline-block;
+    border: none;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+  .button {
+    color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 6px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #5fffb4);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes background-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+    }
+  
+    .joinInnerContainer {
+      width: 90%;
+    }
+  
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }
